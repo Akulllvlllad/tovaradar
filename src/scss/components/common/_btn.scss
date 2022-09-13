@@ -1,0 +1,106 @@
+@import '../../variables';
+.btn{
+  cursor: pointer;
+  padding: 9.5px 40px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  line-height: 21px;
+  font-family: 'Roboto';
+  color: #FFFFFF;
+  background-color: $on-btn;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  &:hover{
+    background-color: $btn-hover;
+    color: #ddd8d8;
+  }
+  &:active{
+    background-color:$btn-active;
+    color: #1c1b1b;
+  }
+  &-catalog{
+    padding: 9.5px 17px;
+    display: flex;
+    gap: 7px;
+    width: 125px;
+    &__icon{
+      position: relative;
+      width: 16px;
+      .icon_line1{
+        position: absolute;
+        top: 4px;
+        width: 16px;
+        height: 1.6px;
+        background-color:#FFFFFF;
+      }
+      .icon_line2{
+        top: 10px;
+        position: absolute;
+        width: 16px;
+        height: 1.6px;
+        background-color:#FFFFFF;
+      }
+      .icon_line3{
+        bottom: 4px;
+        position: absolute;
+        width: 12px;
+        height: 1.6px;
+        background-color:#FFFFFF;
+      }
+    }
+  }
+  &-main{
+    width: 140px;
+
+  }
+}
+
+
+.btn-catalog-off{
+  padding: 9.5px 17px;
+  background-color: $off-btn;
+  color: $on-btn;
+  display: flex;
+  gap: 6.5px;
+  width: 125px;
+  &:hover{
+    background-color:#ddd8d8 ;
+    color: $btn-hover;
+  }
+  &:active{
+    background-color:#1c1b1b;
+    color: $btn-active;
+  }
+  span{
+    color: $on-btn;
+    font-size: 30px;
+    transform: rotate(-45deg);
+  }
+}
+
+
+.calc{
+  padding: 0 20px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #2CB708;
+  border-radius: 10px;
+  span{
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21px;
+    color: #2CB708;
+    line-height: 21px;
+    font-family: 'Roboto';
+  }
+  p{
+    color: #2CB708;
+  }
+}

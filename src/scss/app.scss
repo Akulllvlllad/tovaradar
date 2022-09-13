@@ -1,0 +1,26 @@
+
+@import './variables.scss';
+@import './libs/normalize.scss';
+
+@import './components/all.scss';
+
+body {
+  background-color: $background;
+}
+.container{
+  margin: 0 auto;
+  max-width: $max-width;
+  border: 1px solid saddlebrown;
+  height: 100%;
+}
+
+
+
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+
+
