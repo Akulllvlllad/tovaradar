@@ -1,4 +1,6 @@
 import React from "react"
+import { useActions } from './../../../useHooks/useActions';
+import { useSelector } from 'react-redux';
 
 
 
@@ -24,17 +26,19 @@ return(
 )}
 
   
-export const MainBTN = ({children}) => {
-  const [count, setCount] = React.useState(0)
+export const MainBTN = ({id, children}) => {
+  const {cart} = useSelector(state => state.cart)
+  const {addItem, deleteItem} =useActions()
+  
   return(
     <>
-    {count
+    {true
     ?<div className=" btn-main calc">
-        <span onClick={() => setCount(prev => prev - 1)}>-</span>
-        <p>{count}</p>
-        <span onClick={() => setCount(prev => prev + 1)}>+</span>
+        <span >-</span>
+        <p>{}</p>
+        <span onClick={() => addItem(id)}>+</span>
       </div>
-    :<button className='btn btn-main' onClick={() => setCount(prev => prev + 1)}>{children}</button>
+    :<button className='btn btn-main'>{children}</button>
     }
     </>
   )

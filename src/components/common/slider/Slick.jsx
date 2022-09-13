@@ -44,8 +44,8 @@ export const Slick = ( ) => {
     <div className={css.root}>
         
         <Slider {...settings}>
-          {[...Array(3)].map(() => (
-            <div className={css.item}> 
+          {[...Array(3)].map((one, i) => (
+            <div key={i} className={css.item}> 
             <img  src={promo} alt='sell'/>
           </div>
           ))}

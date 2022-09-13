@@ -1,0 +1,43 @@
+.root{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  background-color: #fff;
+}
+.like{
+  position: relative;
+  height: 10px;
+  z-index: 2;
+  svg{
+    position: absolute;
+    right: 0;
+    
+  }
+}
+.img{
+  height: 220px;
+  position: relative;
+  
+  img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+
+.price{
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+color: #333232;
+
+}

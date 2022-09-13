@@ -10,7 +10,7 @@ export const fetchGoods = createAsyncThunk(
   }
 )
 
-export const counterSlice = createSlice({
+export const goodsSlice = createSlice({
   name: 'goods',
   initialState: {
     status: 'loading',
@@ -36,6 +36,6 @@ export const counterSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const {} = counterSlice.actions
+export const {} = goodsSlice.actions
 
-export default counterSlice.reducer
+export default goodsSlice.reducer
